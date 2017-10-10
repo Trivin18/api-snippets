@@ -5,15 +5,15 @@ import com.twilio.type.PhoneNumber;
 
 public class SmsSender {
     // Find your Account Sid and Auth Token at twilio.com/console
-    public static final String ACCOUNT_SID = "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-    public static final String AUTH_TOKEN = "your_auth_token";
+    public static final String ACCOUNT_SID = "AC1fb44dbb4311dcd7a8131757e0104b49";
+    public static final String AUTH_TOKEN = "cca9e4b4196639beaf9214435058088c";
 
     public static void main(String[] args) {
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 
         Message message = Message
-            .creator(new PhoneNumber("+14159352345"), // to
-                     new PhoneNumber("+14158141829"), // from
+            .creator(new PhoneNumber("+917092542313"), // to
+                     new PhoneNumber("+18314403068"), // from
                      "Where's Wallace?")
             .create();
 
